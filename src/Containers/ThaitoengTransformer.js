@@ -11,7 +11,7 @@ function ThaiToEngTransformer() {
 
   const handleTranslate = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5001/translateThai2engTransformer', {
+      const response = await fetch('http://127.0.0.1:5003/translateThai2engTransformer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
