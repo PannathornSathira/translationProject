@@ -1,14 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import MBartForConditionalGeneration, AutoTokenizer
 
 app = Flask(__name__)
 CORS(app)
 
 # Load your model and tokenizer
-model_name = "/Users/bossthemeow/Desktop/nlpproject/modelThai2eng"  # Repllsace with your model path or name
+model_name = "./Models/thai_to_eng_BART"  # Repllsace with your model path or name
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+model = MBartForConditionalGeneration.from_pretrained(model_name)
 
 @app.route('/translateThai2eng', methods=['POST'])
 def translate():

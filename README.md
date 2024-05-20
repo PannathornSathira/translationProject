@@ -4,6 +4,29 @@ This project develop front-end and back-end to linking between the webpage and t
 
 **Note: these code on github do not contain the model code because of size of models. You need to download by yourself from summited link.**
 
+## Setup
+
+### `npm install`
+
+Install the necessary node modules required for the application.
+
+### `pip install -r requirements.txt`
+
+Install the necessary python modules for the models.
+
+### Get the models
+
+You can train the model yourself or use the pre trained model provided in the links:\
+1. [https://drive.google.com/drive/folders/1Ij4JAVmuIObmHbTpDL_oC6scO2HKpYDV](https://drive.google.com/drive/folders/1Ij4JAVmuIObmHbTpDL_oC6scO2HKpYDV)\
+Download both `eng_to_thai_BART` and `thai_to_eng_BART` folders and place them in `./Models` folder.
+
+2. [https://drive.google.com/drive/folders/1DHKoQnBhc4oZvkbhnKpZguup7yYcHrDm?usp=sharing](https://drive.google.com/drive/folders/1DHKoQnBhc4oZvkbhnKpZguup7yYcHrDm?usp=sharing)\
+Download both `th2en_transformer.pth` and `en2th_transformer.pth` and place them in `./Models` folder.\
+
+If you decide to train the model yourself, be sure to change the paths within all python backend files accordingly.
+
+**Note: Make sure that the folder structure and name matches exactly!**
+
 ## Main Scripts to run the project
 In the project, the following commands need to be run at the same time by using different terminal, and the path of model in all python code need to be changed which are eng2thaiServer.py, thai2engServer.py, thai2engServerTransformer.py, and eng2thaiServerTransformer.py.
 
