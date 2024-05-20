@@ -16,6 +16,8 @@ Install the necessary python modules for the models.
 
 ### Get the models
 
+Create a new folder named `Models` at root i.e. `./Models` to store the AI models.
+
 You can train the model yourself or use the pre trained model provided in the links:\
 1. [https://drive.google.com/drive/folders/1Ij4JAVmuIObmHbTpDL_oC6scO2HKpYDV](https://drive.google.com/drive/folders/1Ij4JAVmuIObmHbTpDL_oC6scO2HKpYDV)\
 Download both `eng_to_thai_BART` and `thai_to_eng_BART` folders and place them in `./Models` folder.
